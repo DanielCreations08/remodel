@@ -110,3 +110,69 @@ body {
 }
 
 /*Nav Bar */
+
+
+
+.sectionOne {
+    background: #004AAD;
+    text-align: center;
+    padding: 10px 0; /* Adjust the padding as needed */
+    padding-bottom: 250px;
+    color: white;
+    background-image: url("/img/background-section-one.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  
+  }
+
+
+  .logoContainer { 
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+
+  .logo {
+    margin-top: 2px;
+    max-width: 37%;
+    height: auto;
+  }
+  
+  .slogan-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  
+  .slogan {
+    margin-top: 5px; /* Adjust the margin as needed */
+    max-width: 82%;
+    display: flex;
+    justify-content: center;
+    line-height: 1.5;
+  }
+
+  .cta-button {
+    display: inline-block;
+    margin-top: 18px; /* Adjust the margin as needed */
+    padding: 18px 42px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #EBBB2D;
+    color: black;
+    border-radius: 6px;
+  }
+
+
+  /* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+
+    .logo {
+      margin-top: 40px;
+      max-width: 100%;
+    }
+  }
+  
+  
+  
