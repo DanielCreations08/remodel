@@ -113,13 +113,18 @@ body {
 
 
 
+
+
+
+/*sectionOne*/
+
 .sectionOne {
     background: #004AAD;
     text-align: center;
     padding: 10px 0; /* Adjust the padding as needed */
-    padding-bottom: 250px;
+    padding-bottom: 120px;
     color: white;
-    background-image: url("/img/background-section-one.png");
+    background-image: url("/assets/background-section-one.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -176,3 +181,60 @@ body {
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+/* sectionTwo */
+
+
+.sectionTitle {
+  padding-top: 2px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.sectionTwo {
+  
+  background-color: #ffffff;
+  padding: 12px 12px; /* Adjust padding as needed */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid with minimum width of 200px */
+  gap: 20px; /* Adjust spacing between items */
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.service {
+  text-align: center;
+}
+
+.service img {
+  width: 100%; /* Adjust image width to fill its container */
+  max-width: 200px; /* Set maximum width for larger screens */
+  border: 4px solid #FFD700; /* Increased yellow stroke for better visibility */
+  border-radius: 15px;
+}
+
+.service-title {
+  color: #FFD700; /* Yellow text color */
+  margin-top: 12px;
+  font-size: 20px; /* Adjusted font size for better readability */
+}
+
+@media only screen and (max-width: 768px) {
+  .sectionTwo {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust column width for smaller screens */
+    margin: 0px 8px 0px 0px;
+  }
+}
