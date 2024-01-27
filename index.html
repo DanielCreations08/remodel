@@ -13,11 +13,11 @@
 
     <!--Nav Bar Start-->
 <div class="navbar" id="myNavbar">
-    <a href="#" class="active">Home</a>
-    <a href="#">Services</a>
-    <a href="#">Portfolio</a>
-    <a href="#">Contact</a>
-    <a href="#">About Us</a>
+    <a href="/index.html" class="active">Home</a>
+    <a href="/pages/services.html">Services</a>
+    <a href="pages/portfolio.html">Portfolio</a>
+    <a href="#contactForm">Contact</a>
+    <a href="#about">About Us</a>
 
     <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
         <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
@@ -58,33 +58,45 @@
 
 <div class="sectionTwo">
     <div class="service">
-      <img src="/assets/kitchen-remodeling-service.png" alt="Service 1">
-      <h3 class="service-title">Kitchen<br>Renovation</h3>
+      <a href="/pages/services.html">
+        <img src="/assets/kitchen-remodeling-service.png" alt="Service 1">
+        <h3 class="service-title">Kitchen<br>Renovation</h3>
+     </a>
     </div>
   
-    <div class="service">
-      <img src="/assets/bathroom-remodeling-service.png" alt="Service 2">
-      <h3 class="service-title">Bathroom<br>Remodel</h3>
+    <div class="service" href="/pages/services.html">
+      <a href="/pages/services.html">
+        <img src="/assets/bathroom-remodeling-service.png" alt="Service 2">
+        <h3 class="service-title">Bathroom<br>Remodel</h3>
+      </a>
     </div>
   
-    <div class="service">
-      <img src="/assets/painting-services-in-kankakee.png" alt="Service 3">
-      <h3 class="service-title">Professional<br>Painting</h3>
+    <div class="service" href="/pages/services.html">
+      <a href="/pages/services.html">
+       <img src="/assets/painting-services-in-kankakee.png" alt="Service 3">
+       <h3 class="service-title">Professional<br>Painting</h3>
+      </a>
     </div>
   
-    <div class="service">
-      <img src="/assets/flooring-services.png" alt="Service 4">
-      <h3 class="service-title">Flooring<br>Installation</h3>
+    <div class="service" href="/pages/services.html">
+      <a href="/pages/services.html">
+        <img src="/assets/flooring-services.png" alt="Service 4">
+        <h3 class="service-title">Flooring<br>Installation</h3>
+      </a>
     </div>
   
-    <div class="service">
-      <img src="/assets/tiling-works-service-in-bourbonnais.png" alt="Service 5">
-      <h3 class="service-title">Tiling<br>Works</h3>
+    <div class="service" href="/pages/services.html">
+      <a href="/pages/services.html">
+        <img src="/assets/tiling-works-service-in-bourbonnais.png" alt="Service 5">
+        <h3 class="service-title">Tiling<br>Works</h3>
+      </a>
     </div>
 
     <div class="service">
+      <a href="/pages/services.html">
         <img src="/assets/cleaning-services-in-kankakee-county.png" alt="Service 5">
         <h3 class="service-title">Cleaning<br>Services</h3>
+      </a>
       </div>
   </div>
   
@@ -100,7 +112,7 @@
     </div>
 
     <!-- Text Section -->
-    <div class="textSection">
+    <div class="textSection" id="about">
         <div class="textContent">
             <div class="experienceHeader">
                 <span class="bigText">+30</span>
@@ -225,7 +237,7 @@
 
 
 
-   <div class="formContainer">
+   <div class="formContainer" id="contactForm">
     <div class="formTitle">
         <h1 class="sectionTitle">Contact Us</h1>
       </div>
@@ -319,7 +331,44 @@
    
 
   </section>
+
+  <footer>
+        <!-- Footer Section -->
+<div class="footer-container">
+  <div class="location-icon">
+    <i class="fas fa-map-marker-alt"></i>
+  </div>
+
+  <h5 class="service-area-title">Service Area:</h5>
+
+  <div class="locations-list">
+    <p>Monee · Mokena · Manteno · Bourbonnais · Bradley · Saint Anne · Kankakee</p>
+  </div>
+
+  <div class="footer-text">
+    <p>Powered by Fresh Marketing Innovations</p>
+  </div>
+</div>
+<!-- Footer Section End -->
+  </footer>
+
+
+
+
 </body>
 
 <script src="script.js"></script>
+<script>
+  // Nav Bar Start
+  function toggleNavbar() {
+        var x = document.getElementById("myNavbar");
+        if (x.className === "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+    }
+
+ // Nav Bar Ends   
+</script>
 </html>

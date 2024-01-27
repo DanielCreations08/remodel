@@ -227,8 +227,6 @@ body {
 }
 
 
-
-
 .service {
   text-align: center;
 }
@@ -236,12 +234,13 @@ body {
 .service img {
   width: 100%; /* Adjust image width to fill its container */
   max-width: 200px; /* Set maximum width for larger screens */
-  border: 4px solid #FFD700; /* Increased yellow stroke for better visibility */
+  border: 2px solid #3489c2; /* Increased yellow stroke for better visibility */
   border-radius: 15px;
 }
 
 .service-title {
-  color: #FFD700; /* Yellow text color */
+  text-decoration: none;
+  color: #525252; /* Yellow text color */
   margin-top: 12px;
   font-size: 20px; /* Adjusted font size for better readability */
 }
@@ -659,3 +658,58 @@ label {
   color: #fff;
 }
 
+
+
+
+
+
+
+/* Estilos para el Footer */
+
+.footer-container {
+  width: 100%;
+  background-color: #000000;
+  margin: 0px;
+  padding: 20px 0px 10px 0px;
+  text-align: center;
+}
+
+.location-icon {
+  font-size: 54px;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.service-area-title {
+  margin-top: 0px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.locations-list {
+  margin: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.footer-text {
+  margin-top: 0px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Estilos para hacer responsive */
+
+@media screen and (max-width: 768px) {
+  .service-area-title {
+    font-size: 16px;
+  }
+
+  .locations-list {
+    font-size: 15px;
+  }
+
+  .footer-text {
+    font-size: 15px;
+  }
+}
