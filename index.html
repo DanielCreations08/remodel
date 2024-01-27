@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/masonry/4.2.2/masonry.pkgd.min.js"></script>
 
 </head>
 <body>
@@ -131,6 +132,9 @@
 
  <!-- Section 4 -->
  <div class="portfolioSection">
+
+
+    
   <div class="portfolioItem">
       <img class="portfolioImage" src="/assets/portfolio1.jpg" alt="Portfolio Item 1">
       <div class="overlay">
@@ -177,7 +181,144 @@
 </div>
 
 
+<!-- Section 5-->
+<div class="titles">
+    <h1 class="sectionTitle">Testimonials</h1>
+  </div>
+  
+  
+      <!-- Testimonial Start -->
+      <div class="testimonials">
+        <div class="testimonial">
+          <i class="fas fa-quote-left"></i>
+          <p>My experience with Rey was excellent! He painted the kitchen walls, cabinets, put down new flooring, new countertops, and backsplash. Rey was professional, thorough, and paid great attention to detail. No matter the difficulties of the workday, he was always pleasant and and flexible. I’d recommend Rey to anyone who needs quality work done at an affordable rate.</p>
+          <i class="fas fa-quote-right"></i>
+          <p>- María Sánchez</p>
+        </div>
+    
+        <div class="testimonial">
+          <i class="fas fa-quote-left"></i>
+          <p>I really appreciate them helping with my design for the tiles. They made sure that I understood any hiccups that came up and all my questions were answered. Very professional company!</p>
+          <i class="fas fa-quote-right"></i>
+          <p>- Cynthia Eubanks</p>
+        </div>
+    
+        <div class="testimonial">
+          <i class="fas fa-quote-left"></i>
+          <p>I have a small master bath in a home built in the late 1960s. The shower floor was in need of repair (I had retiled the shower previously out of necessity), the fixtures were super short and the ceramic floor was the original. 
+            Cris, Rey Jr. and Rey Sr. are true professionals and it is apparent that they take great pride in their craftsmanship. They kept me informed of all challenges encountered and made sure I was part of the decision making process. The project was delayed due to some faulty tiles I received (special order from Lowe’s) but they jumped right back in to complete the job as soon as possible.
+            I will definitely have them back to do more work (and there is lots of it!). Not only are they good at their craft, they are good people!</p>
+          <i class="fas fa-quote-right"></i>
+          <p>- Claudia N</p>
+        </div>
+      </div>
+    <!-- Testimonial End -->
 
+    <script>
+  </script>
+
+
+
+
+
+
+
+
+
+   <div class="formContainer">
+    <div class="formTitle">
+        <h1 class="sectionTitle">Contact Us</h1>
+      </div>
+      
+    <div class="form-box">
+          
+          
+        <div class="form-content" >
+             
+          <form id="form" class="form" action="https://formspree.io/f/mnqknjyq" method="POST">
+
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+    
+            <label for="service-required">Tap to Indicate Your Required Services:</label>
+            <div class="service-options">
+               
+
+              <label>
+                  <input type="checkbox" name="services[]" value="cooling">
+                  <span>Interior/Exterior Remodelations</span>
+              </label>
+
+              <label>
+                  <input type="checkbox" name="services[]" value="plumbing">
+                  <span>Cleaning Services</span>
+              </label>
+
+              <label>
+                  <input type="checkbox" name="services[]" value="plumbing">
+                  <span>Repairs/Installations</span>
+              </label>
+
+              <label>
+                  <input type="checkbox" name="services[]" value="heating">
+                  <span>Heating</span>
+              </label>
+              
+                <label>
+                    <input type="checkbox" name="services[]" value="cooling">
+                    <span>Cooling</span>
+                </label>
+
+                <label>
+                    <input type="checkbox" name="services[]" value="plumbing">
+                    <span>Plumbing</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="services[]" value="heating">
+                    <span>Heating</span>
+                </label>
+
+                <label>
+                    <input type="checkbox" name="services[]" value="others">
+                    <span>Others</span>
+                </label>
+            </div>
+    
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" cols="30" rows="5" required></textarea>
+    
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" required>
+    
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" required>
+    
+            <label for="contact-time">Preferred Contact Time:</label>
+            <select name="contact-time" id="contact-time" required>
+                <option value="">Select</option>
+                <option value="morning">Morning</option>
+                <option value="evening">Evening</option>
+                <option value="night">Night</option>
+            </select>
+            <input class="btn-form" type="submit" value="Submit">
+    
+            <input type="hidden" name="_next" value="http://www.example.com/thank-you-page">
+    
+            <input type="hidden" name="_captcha" value="false">
+        </form>          
+  
+          
+       </div>
+
+
+  </div>
+   </div>   
+   
+
+  </section>
 </body>
 
 <script src="script.js"></script>
