@@ -192,7 +192,6 @@ body {
 
 
 
-
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
@@ -8807,45 +8806,58 @@ h6,
 
 
 
-.my-container {
-  display: flex;
-  background: #004AAD;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 10px;
-  color: white;
+
+/*  Footer */
+
+.footer-container {
+  border-top: 1px solid #ffffff;
+  width: 100%;
+  background-color: #004AAD;
+  margin: 0px;
+  padding: 20px 0px 10px 0px;
+  text-align: center;
 }
 
-.location {
-  background: #004AAD;
-  font-size: 2em;
-  margin-bottom: 0px;
+.location-icon {
+  
+  font-size: 40px;
+  margin-bottom: 5px;
+  color: #ffffff;
 }
 
-h4 {
-  color: #959595;
-  margin-bottom: 10px;
-}
-
-
-.area-title {
-  color: white;
+.service-area-title {
+  margin-top: 0px;
+  font-size: 20px;
+  color: #ffffff;
 }
 
 .locations-list {
-  color: #EBBB2D;
-  text-align: center;
-  margin-bottom: 5px;
+  margin: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
 }
 
-.footer {
-  margin-top: 0px;
-  text-align: center;
-  width: 100%;
+.footer-text {
   background-color: #EBBB2D;
-  color: #000000; 
-  padding-top: 10px; 
+  margin-top: 0px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Estilos para hacer responsive */
+
+@media screen and (max-width: 768px) {
+  .service-area-title {
+    font-size: 16px;
+  }
+
+  .locations-list {
+    font-size: 15px;
+  }
+
+  .footer-text {
+    font-size: 15px;
+  }
 }
 
 
