@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Portafolio</title>
+  <title>Remodeling Services in Kankakee / Bourbonnais</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -316,21 +318,76 @@ label {
 }
 
 
+
+/*  Footer */
+
+.footer-container {
+  border-top: 1px solid #ffffff;
+  width: 100%;
+  background-color: #004AAD;
+  margin: 0px;
+  padding: 20px 0px 10px 0px;
+  text-align: center;
+}
+
+.location-icon {
+  
+  font-size: 40px;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.service-area-title {
+  margin-top: 0px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.locations-list {
+  margin: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.footer-text {
+  background-color: #EBBB2D;
+  margin-top: 0px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Estilos para hacer responsive */
+
+@media screen and (max-width: 768px) {
+  .service-area-title {
+    font-size: 16px;
+  }
+
+  .locations-list {
+    font-size: 15px;
+  }
+
+  .footer-text {
+    font-size: 15px;
+  }
+}
+
+
   </style>
 </head>
 <body>
 
     <!--Nav Bar Start-->
     <div class="navbar" id="myNavbar">
-        <a href="#" class="active">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
-        <a href="#">About Us</a>
+        <a href="/index.html" class="active">Home</a>
+        <a href="/pages/services.html">Services</a>
+        <a href="/pages/portfolio.html">Portfolio</a>
+        <a href="#contactForm">Contact</a>
+       
     
-        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.tiktok.com/@buildingupthekingdom" class="social-icon"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/remodelwithsilva/" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/remodelwithsilva/" class="social-icon"><i class="fab fa-facebook"></i></a>
     
     
         <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
@@ -691,6 +748,17 @@ label {
     });
 
 
+// Nav Bar Start
+function toggleNavbar() {
+        var x = document.getElementById("myNavbar");
+        if (x.className === "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+    }
+
+ // Nav Bar Ends   
 
 
 
@@ -705,7 +773,7 @@ label {
 
 
 
-<div class="formContainer">
+<div class="formContainer" id="contactForm">
     <div class="formTitle">
         <h1 class="sectionTitle">Contact Us</h1>
       </div>
@@ -796,7 +864,25 @@ label {
 
   </div>
    </div>   
+   <footer>
+    <!-- Footer Section -->
+<div class="footer-container">
+<div class="location-icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
 
+<h5 class="service-area-title">Service Area:</h5>
+
+<div class="locations-list">
+<p>Monee · Mokena · Manteno · Bourbonnais · Bradley · Saint Anne · Kankakee</p>
+</div>
+
+<div class="footer-text">
+<p>Powered by Fresh Marketing Innovations</p>
+</div>
+</div>
+<!-- Footer Section End -->
+</footer>
 </body>
 </html>
 

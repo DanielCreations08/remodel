@@ -664,18 +664,20 @@ label {
 
 
 
-/* Estilos para el Footer */
+/*  Footer */
 
 .footer-container {
+  border-top: 1px solid #ffffff;
   width: 100%;
-  background-color: #000000;
+  background-color: #004AAD;
   margin: 0px;
   padding: 20px 0px 10px 0px;
   text-align: center;
 }
 
 .location-icon {
-  font-size: 54px;
+  
+  font-size: 40px;
   margin-bottom: 5px;
   color: #ffffff;
 }
@@ -693,6 +695,7 @@ label {
 }
 
 .footer-text {
+  background-color: #EBBB2D;
   margin-top: 0px;
   font-size: 16px;
   color: #ffffff;
